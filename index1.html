@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Proyecto Final prueba</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
+
+    </head>
+    
+    <body>
+
+    
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="index1.html" class="logo">
+                            Proyecto Final "Matematica Discreta"    
+                        </a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <div class="item">
+            <div class="img-fill">
+                <img src="assets/images/fondo1.jpg" alt="">
+                <div class="text-content">
+                  <h3>Matematica discreta</h3>
+                  <h5>Unidad I</h5>
+                  <a href="unidad1.html" class="main-stroked-button">Ver contenido</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="img-fill">
+                <img src="assets/images/fondo2.jpg" alt="">
+                <div class="text-content">
+                  <h3>Matematica discreta</h3>
+                  <h5>Unidad II</h5>
+                  <a href="unidad2.html" class="main-stroked-button">Ver contenido</a>
+                </div>
+            </div>
+          </div>
+  
+          <div class="item">
+            <div class="img-fill">
+                <img src="assets/images/fondo3.jpg" alt="">
+                <class class="text-content">
+                  <h3>Matematica discreta</h3>
+                  <h5>Unidad III</h5>
+                  <a href="Unidad3.html" class="main-stroked-button">Ver contenido</a>
+                </div>
+            </div>
+            <div class="item">
+              <div class="img-fill">
+                  <img src="assets/images/integrantes.jpg" alt="">
+                  <class class="text-content">
+                    <h5>Integrantes</h5>
+                    <a href="resultado.html" class="main-stroked-button">Ver</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+      
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>

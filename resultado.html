@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final 1</title>
+</head>
+<body>
+
+    <style type="text/css">
+
+        body{
+            background: #000;
+        }
+
+        h1{
+            background-color: rgb(250, 250, 250);
+            position: absolute;
+        }
+
+        .btn{
+            width: 100px;
+            height:100px;
+            background: #3333ff;
+            position: absolute;
+            margin: 23px 0px 0px 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            border-radius: 100px;
+            box-shadow: 0px 0px 10px 2px blue,
+                        0px 0px 100px 20px blue;
+                        transition: 1s;
+            }
+        
+        .block1{
+            width: 30px;
+            height: 5px;
+            border-radius: 15px;
+            background: #fff;
+            margin-left: -20px;
+            transition: 1s;
+        }
+        .block2{
+            width: 60px;
+            height: 5px;
+            border-radius: 15px;
+            background: #fff;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            transition: 1s;
+        }
+        .block3{
+            width: 30px;
+            height: 5px;
+            border-radius: 15px;
+            background: #fff;
+            margin-left: 20px; 
+            transition: 1s;
+        }
+
+        .content{
+            width: 50px;
+            height: 0px;
+            background: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            align-content: center;
+            justify-content: flex-start;
+            position: absolute;
+            z-index: -1;
+            margin: 50px 0px 0px 325px;
+            overflow: hidden;
+            transition: 5s;
+            animation: 0;
+
+        }
+
+        @keyframes animation{
+            0%{
+                width: 0px;
+                height: 40px;
+                margin: 50px 0px 0px 250px;
+            }      
+            
+            50%{
+                width: 300px;
+                height: 40px;
+                margin: 50px 0px 0px 325px;
+            }  
+
+            100%{
+                width: 300px;
+                height: 240px;
+                margin: 50px 0px 0px 325px;
+            }  
+        }
+
+        @keyframes animationn{
+            0%{
+                width: 300px;
+                height: 240px;
+                margin: 50px 0px 0px 325px;
+            }      
+            
+            50%{
+                width: 300px;
+                height: 40px;
+                margin: 50px 0px 0px 325px;
+            }  
+
+            100%{
+                width: 0px;
+                height: 40px;
+                margin: 50px 0px 0px 250px;
+            }  
+        }
+
+        @keyframes animate {
+        0%{
+            opacity: 0;
+            transform: translateY(0);
+        }
+
+        10%, 90%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0;
+            transform: translateY(-100);
+        }
+        
+    }
+
+        .menu{
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            color: blue;
+            transition: 0.5s;
+            border-bottom: 1px solid #f2f2f2;
+            text-align: center;
+        }
+
+        .menu:hover{
+            color: #fff;
+            background: blue;
+            transition: 0.5s;
+        }
+
+        .scene i{
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        animation: animate linear infinite;
+    }
+
+
+    </style>
+
+    <div class="btn" id="btn" onclick="fun()">
+        <div class="block1" id="btn1"></div>
+        <div class="block2" id="btn2"></div>
+        <div class="block3" id="btn3"></div>
+    </div>
+
+
+    <div class="content" id="content">
+        <a href="#"><input type="submit" class="menu" value="Integrantes"></a>
+        <a href="#"><input type="submit" class="menu" value="Jenner Aldair Sanchez Vasquez"></a>
+        <a href="#"><input type="submit" class="menu" value="Eduardo Enuel Oliva Alvizures"></a>
+        <a href="#"><input type="submit" class="menu" value="Alyson Esther Contreras Rivas"></a>
+        <a href="#"><input type="submit" class="menu" value="Jhonatan Alexis Lool Alvarado"></a>
+        <a href="index1.html"><input type="submit" class="menu" value="Volver"></a>
+    </div>
+
+
+    <div class= "scene"></div>
+
+    <script type="text/javascript">
+    
+        let eventClick = false;
+
+        function fun() {
+            var btn = document.getElementById('btn');
+            var btn1 = document.getElementById('btn1');
+            var btn2 = document.getElementById('btn2');
+            var btn3 = document.getElementById('btn3');
+
+            if (eventClick) {
+                eventClick=!eventClick;
+
+                btn.style.background = "#3333ff";
+                btn.style.boxShadow = "0px 0px 10px 2px blue, 0px 0px 100px 20px blue ";
+
+                btn1.style.transform = "rotate(0deg)";
+                btn2.style.transform = "rotate(0deg)";
+                btn3.style.transform = "rotate(0deg)";
+                btn3.style.marginLeft = "20px";
+
+                content.style.width = "0px";
+                content.style.height = "0px";
+
+                content.style.animationn = "animation 2s";
+
+            }else{
+                eventClick=!eventClick;
+
+                btn.style.background = "red";
+                btn.style.boxShadow = "0px 0px 10px 2px red, 0px 0px 100px 20px red ";
+
+                btn1.style.transform = "rotate(40deg)";
+                btn2.style.transform = "rotate(-40deg)";
+                btn3.style.transform = "rotate(40deg)";
+                btn1.style.marginLeft = "-25px";
+
+                content.style.width = "300px";
+                content.style.height = "280px";
+
+                content.style.animationn = "animation 2s";
+            }
+        }
+
+        function stars(){
+        let cout = 500;
+        let scene = document.querySelector('.scene');
+
+        let i = 0;
+        
+        while(i<cout){
+            let star = document.createElement("i");
+
+            let x = Math.floor(Math.random() * window.innerWidth);
+            let y = Math.floor(Math.random() * window.innerHeight);
+
+            let durection = Math.random() * 10;
+            let size = Math.random() * 2;
+
+            star.style.left = x + "px";
+            star.style.top = y + "px";
+            star.style.width = 1+size+"px";
+            star.style.height = 1+size+ "px";
+
+            star.style.animationDuration = 5+durection+'s';
+            star.style.animationDeley = durection+'s';
+
+            scene.appendChild(star);
+
+            i++;
+        }
+    }
+
+    stars();
+
+    </script>
+</body>
+</html>

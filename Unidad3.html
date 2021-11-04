@@ -1,0 +1,840 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>UNIDAD 3</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../3ra. unidad/style.css" media="screen" />
+</head>
+<body>
+<div id="content">
+  <div id="header">
+    <div class="headermenu">
+      <ul>
+        <li><a href="../Pagina de inicio/index1.html">Pagina de inicio</a></li>
+        <li><a href="https://www.umg.edu.gt/">"UMG"</a></li>
+      </ul>
+    </div>
+    <h1>UNIDAD 3</h1>
+  </div>
+  <div id="pic"></div>
+  <div id="middle">
+    <div class="middledata">
+      <h1><center>"TEORIA DE ARBOLES"</center>
+      <p>
+      </h1>
+      <h2>Desde el punto de vista conceptual, un árbol es un caso particular de grafo, es un objeto que comienza con una raíz y se extiende en ramificaciones o lineas que terminan en un nodo.
+      </h2>
+      <h2>Es un conjunto de nodos y líneas. Un nodo es un elemento de información que reside en un árbol. Una línea es un par de nodos ordenados, <u,v>, y a la secuencia de lineas se le llama ruta (path).        .
+      </h2></p>
+      <p>
+      <h1>PROPIEDADES: </h1>
+     <h2>
+      Tiene un nodo al que se le llama "nodo raíz" o raíz del árbol, éste no tiene "padre".
+
+      Todos los nodos tienen una sola línea de entrada, excepto el nodo raíz, éste no tiene línea de entrada.
+
+      Existe una "única" ruta del nodo raíz a todos los demás nodos del árbol.
+
+      Si existe una ruta a,b, entonces "b" es el "hijo" de "a" y es el nodo raíz de un sub-árbol.
+
+      Todos los nodos que son descendientes de un mismo nodo "padre", son "hermanos".
+      Todo nodo que no tiene ramificaciones (hijos), es un nodo "terminal" u "hoja".
+
+      Todo nodo que no es raíz ni terminal es un nodo "interior".
+
+      "Grado" es el número de descendientes directos de un determinado nodo.
+
+      "Grado del árbol" es el máximo grado de todos los nodos del árbol.
+
+      " Nivel" es el número de ramificaciones que se deben recorrer para llegar a un determinado nodo. El nodo raíz tiene nivel 1.
+
+      "Altura del árbol" es el máximo número  de niveles  de todos los nodos del árbol.
+
+      </H2>
+    </p>
+      <h2>Ejemplo:</h2>
+      <img src="../3ra. unidad/1.jpg.png" width="300px" alt="">
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>
+        Identificar:
+      <h2>Nodo Raíz:  A</h2>
+      <h2>Nodos Hijos de B: C, D, E,</h2>
+      <h2>odos Hermanos de K: N </h2>
+      <h2>Grado del Árbol: 3</h2>
+      <h2>Altura del Árbol: 4</h2>
+      </h2>
+      
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver3();">Ver Resultado</button>
+      <div id="respuesta3">
+        <button id="boton" onclick="ocultar3();">Ocultar</button>
+        <img src="../3ra. unidad/2.png" width="200px" alt="">
+      </div>
+    </div>
+
+
+
+
+
+    <div class="middledata">
+      <h1>LONGITUD DE UN ARBOL: </h1>
+      <h2>Es el número de arcos que deben ser recorridos desde la raíz hasta el nodo X.
+      </h2>
+      <H1>LONGITUD DE CAMINO:</H1>
+      <h2> Se define la longitud de camino X como el número de arcos que deben ser recorridos para llegar, desde la raíz, al nodo X. 
+      </h2>
+      <h2>ejemplo:</h2>
+      <img src="../3ra. unidad/3.png" width="200px" alt="">
+      <h1>LONGITUD DE CAMINO INTERNO:</h1>
+      <H2>Es la suma de las longitudes de camino de todos los nodos del árbol,  
+      </H2>
+      <img src="../3ra. unidad/4.png" width="200px" alt="">
+      <H2>En donde i = nivel del árbol, </H2>
+      <H2>h = altura del árbol, </H2>
+      <H2>ni = número de nodos en el nivel "i".</H2>
+      <h2>ejemplo:</h2>
+      <img src="../3ra. unidad/5.png" width="200px" alt="">
+      <h3>1 * 1 = 1
+      </h3>
+      <h3>2 * 2 = 4
+      </h3>
+      <h3>3 * 5 = 15
+      </h3>
+      <h3>4 * 4 = 16
+      </h3>
+      <h1>MEDIA DE LONGITUD DE CAMINO INTERNO </h1>
+      <H2>Es el número de arcos que deben ser recorridos en promedio para llegar de la raíz a un nodo cualquiera del árbol.</H2>
+      <img src="../3ra. unidad/6.png" width="200px" alt="">
+      <H2>En donde LCI = longitud de camino interno y "n" =número de nodos del árbol.</H2>
+      <H2>Ejemplo:</H2>
+      <img src="../3ra. unidad/7.png" width="200px" alt="">
+    </div>
+    <div class="middlesubdata">
+      <h1> Ejercicio.</h1>
+      <h2>Calcular la Longitud del Camino Interno y su respectiva media del siguiente árbol</h2>
+      <h2>LCI = 26 </h2>
+      <h2>LCIM = 2.89
+      </h2>
+      <img src="../3ra. unidad/8.png" width="200px" alt="">
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50" required></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver2();">Ver Resultado</button>
+      <div id="respuesta2">
+        <button id="boton" onclick="ocultar2();">Ocultar</button>
+       
+        <h3>LCIM=  </h3>
+        <h3>26/9 </h3>
+        <h3>2.89
+          </h3>
+          <h3>LCI = 26</h3>
+          <h3>2 * 2 = 4</h3>
+          <h3>3 * 3 = 9</h3>
+          <h3>4 * 3 = 12</h3>
+
+      </div>
+    </div>
+
+
+
+    <div class="middledata">
+      <h1>LONGITUD DE CAMINO EXTERNO </h1>
+      <h2>ARBOL EXTENDIDO: es aquel en el que el número de hijos de cada nodo es igual al grado del árbol.Para que se cumpla esta condición si es necesario se le agregan nodos especiales al árbol, tantos como sea necesario para que se cumpla la condición...
+      </h2>
+      <H2>NODOS ESPECIALES: su objetivo es reemplazar las ramas vacías o nulas y no pueden tener descendientes.</H2>
+    
+      <H2>La longitud de camino externo LCE es la suma de las longitudes de camino de todos los nodos especiales de un árbol.</H2>
+      <img src="../3ra. unidad/11.png" width="200px" alt="">
+      <H2>En donde "h" = altura del árbol,</H2>
+      <h2>"i" = nivel del árbol y</h2>
+      <h2>"nei" = número de nodos especiales en el nivel "i".</h2>
+      <H2>Ejemplo:</H2>
+      <img src="../3ra. unidad/12.png" width="200px" alt="">
+      <h1>MEDIDA DE LA LONGITUD DEL CAMINO EXTERNO: </h1>
+      <h2>Es el número de arcos que deben ser recorridos en promedio desde la raíz hasta un nodo especial cualquiera del árbol.</h2>
+      <img src="../3ra. unidad/13.png" width="200px" alt="">
+  
+      <h2>En donde LCE = longitud de camino externo  y "ne" = número de nodos especiales.</h2>
+      <h2>Ejemplo:</h2>
+      <img src="../3ra. unidad/14.png" width="200px" alt="">
+      <h2>LCE = 109
+      1 * 2 = 	02
+      1 * 3 =	03  
+      11 * 4 =	44
+      12 * 5 =	60
+      </h2>
+
+      <p>
+      <h2>LCEM = 4.36
+      LCE/NE
+      109/25</h2>
+      </p>
+      
+
+
+      </div>
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>Calcular la Longitud del Camino Externo  y su respectiva media del siguiente árbol
+      </h2>
+      <h2>LCE = 45
+      LCEM = 4.5</h2>
+
+      <h2>LCE = 47
+      LCEM = 9.40</h2>
+
+      <img src="../3ra. unidad/15.png" width="200px" alt="">
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver();">Ver Resultado</button>
+      <div id="respuesta">
+        <button id="boton" onclick="ocultar();">Ocultar</button>
+        <img src="../3ra. unidad/16.png" width="200px" alt="">
+        <h2>LCI = 45
+        3 * 1 = 3
+        4 * 3 = 12
+        5 * 6 = 30</h2>
+
+       <h2> LCIM=
+        45/10 = 4.5</h2>
+
+      </div>
+    </div>
+
+
+    
+    <div class="middledata">
+      <center><h1>"TEORIA DE ARBOLES"</h1></center>
+      <h1>"ARBOL BINARIO"
+      </h1>
+      <h2>Un árbol binario es un tipo de árbol en que cada vértice máximo puede tener dos hijos; su nodo raíz está enlazado a dos subárboles binarios disjuntos denominados subárbol izquierdo y subárbol derecho. Los árboles binarios no son vacíos ya que como mínimo tienen el nodo raíz.
+      </h2>
+      <P>
+      <h2>ARBOL BINARIO LLENO: Es aquel árbol en el que los nodos de cada nivel tienen sus dos hijos o ninguno (si es hoja).
+      </h2>
+      <img src="../3ra. unidad/17.png" width="200px" alt="">
+    </P>
+
+    <p>
+    
+      <h2>ARBOL BINARIO COMPLETO: Es aquel árbol binario lleno en que todas sus hojas están en el nivel n o n-1 considerando que para un hijo derecho hay siempre un hijo izquierdo. Por lo tanto, todo árbol binario lleno es completo, pero no la viceversa.
+      </h2>
+      <img src="../3ra. unidad/18.png" width="200px" alt="">
+    </P>
+  
+    <P>
+      <h2>RECORRIDO DE UN ARBOL BINARIO: Un recorrido en un árbol binario es Una operación que consiste en visitar todos sus vértices o nodos, de tal manera que cada vértice se visite una sola vez. Se distinguen tres tipos de recorrido: INORDEN, POSORDEN Y PREORDEN.
+      </h2>
+      <h2>
+        En cada recorrido se tiene en cuenta la posición de la raíz (de ahí su nombre) y que siempre se debe ejecutar primero el hijo izquierdo y luego el derecho.  
+      </h2>
+    </P>
+   
+    <p>
+    
+      <h2>RECORRIDO PREORDEN: Preorden: (raíz, izquierdo, derecho). Para recorrer un árbol binario no vacío en preorden, hay que realizar las siguientes operaciones recursivamente en cada nodo, comenzando con el nodo de raíz:
+      </h2>
+
+        <h2>* Visite la raíz:</h2>
+        <h2>* Atraviese el sub-árbol izquierdo</h2>
+        <h2>* Atraviese el sub-árbol derecho </h2>
+    
+    </p>
+    <h2>Ejemplo: </h2>
+
+    <h3>* Libro</h3>
+    <h3>* Capitulo 1</h3>
+    <h3>* Seccion 1.1</h3>
+    <h3>* Seccion 1.2</h3>
+    <h3>* Seccion 1.2.1</h3>
+    <h3>* Seccion 1.2.2</h3>
+    <h3>* Capitulo 2</h3>
+    <h3>* Seccion 2.1</h3>
+    <h3>* Seccion 2.2</h3>
+    <h3>* Seccion 2.2.1</h3>
+    <h3>* Seccion 2.2.2</h3>
+
+    <img src="../3ra. unidad/19.png" width="400px" alt="">
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>Calcular el recorrido preorden de:</h2>
+      <img src="../3ra. unidad/20.png" width="400px" alt="">
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+
+      <button id="boton" onclick="ver5();">Ver Resultado</button>
+      <div id="respuesta5">
+        <button id="boton" onclick="ocultar5();">Ocultar</button>
+        
+       <h2>12537</h2> 
+        <h2>+A45*67</h2>
+       <h2>imzw</h2>
+      </div>
+    </div>
+
+    <div class="middlesubdata">
+      <h1>RECORRRIDO INORDEN: </h1>
+      <P>
+        <H2>Inorden: (izquierdo, raíz, derecho). Para recorrer un árbol binario no vacío en inorden (simétrico), hay que realizar las siguientes operaciones recursivamente en cada nodo:
+        </H2>
+        <H2>1. Atraviese el sub-árbol izquierdo </H2>
+
+        <H2>2. Visite la raíz </H2>
+
+        <H2>3. Atraviese el sub-árbol derecho. </H2>
+       </P>
+
+    </div>
+    <h2>Ejemplo: </h2>
+
+    <h2>Seccion 1.1
+    </h2>
+    <h2>Capitulo 1
+    </h2>
+    <h2>Seccion 1.2.1
+    </h2>
+    <h2>Seccion 1.2
+    </h2>
+    <h2>Seccion 1.2.2
+    </h2>
+    <h2>Libro
+    </h2>
+    <h2>Seccion 2.1
+    </h2>
+    <h2>Capitulo 2
+    </h2>
+    <h2>Seccion 2.2.1
+    </h2>
+    <h2>Seccion 2.2
+    </h2>
+    <h2>Seccion 2.2.2
+    </h2>
+    <img src="../3ra. unidad/22.png" width="400px" alt="">
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>
+        Calcular el recorrido inorden de:
+      </h2>
+      <img src="../3ra. unidad/23.png" width="350px" alt="">
+      
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver6();">Ver Resultado</button>
+      <div id="respuesta6">
+        <button id="boton" onclick="ocultar6();">Ocultar</button>
+        <h2>2 5 1 3 7
+        </h2>
+        <h2>4 A 5 + 6 * 7
+        </h2>
+        <h2>Z m w i
+        </h2>
+        
+      </div>
+    </div>
+
+
+    <div class="middlesubdata">
+      <h1>RECORRRIDO POSTORDEN: </h1>
+      <P>
+        <H2>Postorden: (izquierdo, derecho, raíz). Para recorrer un árbol binario no vacío en postorden, hay que realizar las siguientes operaciones recursivamente en cada nodo:
+        </H2>
+        <H2>1. Atraviese el sub-árbol izquierdo </H2>
+
+        <H2>2. Atraviese el sub-árbol derecho
+        </H2>
+
+        <H2>3. Visite la raíz </H2>
+       </P>
+
+    </div>
+
+    <h2>Ejemplo: </h2>
+
+    <h2>Seccion 1.1
+    </h2>
+    <h2>Seccion 1.2.1
+    </h2>
+    <h2>Seccion 1.2.2
+    </h2>
+    <h2>Seccion 1.2
+    </h2>
+    <h2>Capitulo 1
+    </h2>
+    <h2>Seccion 2.1
+    </h2>
+    <h2>Seccion 2.2.1
+    </h2>
+    <h2>Seccion 2.2.2
+    </h2>
+    <h2>Seccion 2.2
+    </h2>
+    <h2>Capitulo 2
+    </h2>
+    <h2>Libro
+    </h2>
+    <img src="../3ra. unidad/25.png" width="350px" alt="">
+
+
+
+
+div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>
+        Calcular el recorrido postorden de:
+      </h2>
+      <img src="../3ra. unidad/26.png" width="350px" alt="">
+      
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver7();">Ver Resultado</button>
+      <div id="respuesta7">
+        <button id="boton" onclick="ocultar7();">Ocultar</button>
+        <h2>5 2 7 3 1
+
+        </h2>
+        <h2>4 5 A 6 7 * +
+
+        </h2>
+        <h2>Z w m i
+
+        </h2>
+       
+      </div>
+    </div>
+
+    <div class="middlesubdata">
+      <h1> ARBOL BINARIO DE BUSQUEDA: </h1>
+      <P>
+        <H2>Un árbol binario de búsqueda es aquel que tiene sus nodos con un orden definido, de tal manera que los datos del subárbol izquierdo son menores y los del subárbol derecho son mayores. 
+
+        </H2>
+        <H2>Estos árboles tienen como particularidad la permisión de que se puedan realizar búsquedas de nodos o datos determinados, utilizando el método de búsqueda binaria de manera similar al usado en arreglos.
+        </H2>
+
+        <H2>Para crear un árbol binario de búsqueda a partir un listado de datos, asuma que el primer dato es la raíz del árbol; los demás se ubican en el árbol así: los menores como hijos izquierdos y los mayores como hijos derechos.
+        </H2>
+
+       </P>
+       
+    <h2>Ejemplo: </h2>
+    <h2>Crear un arbol de busqueda con los siguientes datos: </h2>
+    <h2>43, 10, 8, 54, 15, 50, 53
+    </h2>
+    <img src="../3ra. unidad/27.png" width="350px" alt="">
+    </div>
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>Construir un árbol de búsqueda con los siguientes datos:
+      </h2>
+      <h2>65  85  74  40  86  80  18  21  18  89
+      </h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+
+      <button id="boton" onclick="ver8();">Ver Resultado</button>
+      <div id="respuesta8">
+        <button id="boton" onclick="ocultar8();">Ocultar</button>
+        <img src="../3ra. unidad/28.png" width="350px" alt="">
+      </div>
+    </div>
+
+
+
+  <div class="middledata">
+    <center><h1>CANTIDADES ESCALARES Y VECTORIALES:</h1></center>
+    <h1>CANTIDAD ESCALAR: </h1>
+    <h2>Está especificada por un valor con la unidad apropiada.</h2>
+
+    <h2>Ejemplo: Temperatura, Masa, Volumen, Tiempo</h2>
+      
+    <h2>Estas cantidades pueden tener valores positivos, negativos o tener un valor cero, sus operaciones matemáticas se realizan utilizando las reglas de la aritmética
+    </h2>
+    <p>
+    <h1>CANTIDAD VECTORIAL: </h1>
+
+    <h2>Son aquellas que quedan totalmente definidas con un módulo, una dirección y un sentido. 
+
+      Es el caso de la fuerza, la velocidad, el desplazamiento. En estas magnitudes es necesario especificar hacia dónde se dirigen y, en algunos casos  dónde se encuentran aplicadas. 
+      </h2>
+    </p>
+
+    <p>
+    <h1>VECTOR: </h1>
+
+    <h2>Un vector tiene tres características esenciales: módulo, dirección y sentido. Los vectores se representan goemétricamente con flechas y se le asigna por lo general una letra que en su parte superior lleva una pequeña flecha, ejemplo:
+      </h2>
+      <img src="../3ra. unidad/29.png" width="275px" alt="">
+
+  </p>
+
+  <p>
+    
+    <h1>MODULO: </h1>
+
+    <h2>Está representado por el tamaño del vector, y hace referencia a la intensidad de la magnitud ( número). Ejemplo:
+      </h2>
+      <img src="../3ra. unidad/30.png" width="200px" alt="">
+
+  </p>
+
+  <p>
+    
+    <h1>DIRECCION: </h1>
+
+    <h2>Corresponde a la inclinación de la recta, y representa al ángulo entre ella y un eje horizontal imaginario. . Ejemplo:
+      </h2>
+      <img src="../3ra. unidad/31.png" width="200px" alt="">
+
+  </p>
+
+
+  <p>
+    
+    <h1>SENTIDO: </h1>
+
+    <h2>Está indicado por la punta de la flecha. (signo positivo que por lo general no se coloca, o un signo negativo). Ejemplo:
+      </h2>
+      <img src="../3ra. unidad/32.png" width="200px" alt="">
+
+  </p>
+<p>
+  <h1>SISTEMA DE COORDINADAS CARTESIANAS:</h1>
+</p>
+<img src="../3ra. unidad/33.jpg" width="350px" alt="">
+
+<h2>Ejemplo:</h2>
+<img src="../3ra. unidad/34.jpg" width="350px" alt="">
+
+</div>
+
+
+
+<div class="middlesubdata">
+  <h1> Ejercicio:</h1>
+  <h2>Graficar el Vector:
+  </h2>
+ <h2>A=(2,3) </h2>
+ 
+  <form class="" action="resultado.html" method="post">
+    <textarea name="comentario" rows="10" cols="50"></textarea>
+  </form>
+  <p></p>
+
+  <button id="boton" onclick="ver9();">Ver Resultado</button>
+  <div id="respuesta9">
+    <button id="boton" onclick="ocultar9();">Ocultar</button>
+    <img src="../3ra. unidad/35.gif" width="350px" alt="">
+  </div>
+</div>
+
+<div class="middlesubdata">
+<h1>OPERACIONES GEOMETRICAS VECTORIALES: </h1>
+<h2>SUMA DE VECTORES: Al sumar dos vectores se obtiene otro vector (vector suma o resultante). Para obtener el vector suma es necesario recurrir a lo que se conoce como “regla del paralelogramo”. Ejemplo: </h2>
+<img src="../3ra. unidad/36.png" width="350px" alt="">
+</div>
+
+<div class="middlesubdata">
+  <h1> Ejercicio:</h1>
+  <h2>sumar: </h2>
+  <img src="../3ra. unidad/40.jpeg" width="300px" alt="">
+  <form class="" action="resultado.html" method="post">
+    <textarea name="comentario" rows="10" cols="50"></textarea>
+  </form>
+  <p></p>
+
+  <button id="boton" onclick="ver10();">Ver Resultado</button>
+  <div id="respuesta10">
+    <button id="boton" onclick="ocultar10();">Ocultar</button>
+    <img src="../3ra. unidad/39.jpg" width="300px" alt="">
+  </div>
+</div>
+
+<div class="middlesubdata">
+
+<h2>RESTA DE VECTORES:  Para la resta se procede de la misma forma que la suma, pero el vector que resta se debe dibujar con sentido contrario, o sea el signo negativo cambia el sentido del vector. Luego el vector resultante es el que va desde el punto inicial del primer vector, hasta el final del vector que se le cambio el sentido.
+</h2>
+<img src="../3ra. unidad/37.png" width="250px" alt="">
+</div>
+
+<div class="middlesubdata">
+  <h1> Ejercicio:</h1>
+  <h2> Restar:</h2>
+  <img src="../3ra. unidad/43.jpeg" width="300px" alt="">
+  <form class="" action="resultado.html" method="post">
+    <textarea name="comentario" rows="10" cols="50"></textarea>
+  </form>
+  <p></p>
+  
+  <button id="boton" onclick="ver11();">Ver Resultado</button>
+  <div id="respuesta11">
+    <button id="boton" onclick="ocultar11();">Ocultar</button>
+    <img src="../3ra. unidad/42.jpg" width="250px" alt="">
+  </div>
+</div>
+
+<div class="middlesubdata">
+
+  <h2>  MULTIPLICACION DE UN ESCALAR POR VECTOR: Las componentes del vector resultante se obtienen multiplicando el escalar, k, por las componentes del vector, por ejemplo: 
+  </h2>
+  <h2>2 * (3, -2)     =  (6, -4)
+  </h2>
+  <h2>- 1 * (4, 2)   = (-4, -2)
+  </h2>
+  <img src="../3ra. unidad/38.png" width="250px" alt="">
+  </div>
+
+  <div class="middlesubdata">
+    <h1> Ejercicio:</h1>
+    <h2> Multiplicar:</h2>
+    <img src="../3ra. unidad/45.jpeg" width="300px" alt="">
+    <form class="" action="resultado.html" method="post">
+      <textarea name="comentario" rows="10" cols="50"></textarea>
+    </form>
+    <p></p>
+    
+    <button id="boton" onclick="ver12();">Ver Resultado</button>
+    <div id="respuesta12">
+      <button id="boton" onclick="ocultar12();">Ocultar</button>
+      <img src="../3ra. unidad/44.jpeg" width="300px" alt="">
+    </div>
+  </div>
+
+
+
+
+  <div class="middledata">
+    <center><h1>TEORIA DE PROBABILIDAD:</h1></center>
+    <h2>PROBABILIDAD: La probabilidad es el cálculo matemático que evalúa las posibilidades que existen de que una cosa suceda cuando interviene el azar.
+    </h2>
+
+    <H2>EVENTOS: Un evento se entiende como el acontecimiento de un hecho en proceso o por venir, Se dice que es aleatorio, si no es posible determinarlo con exactitud. En todo caso, será posible predecirlo con un nivel dado de confianza. 
+    </H2>
+
+    <H2>ESPACIO MUESTRAL: En la teoría de probabilidades, el espacio muestral o espacio de muestreo (denotado E, S, Ω o U) consiste en el conjunto de todos los posibles resultados individuales de un experimento aleatorio. Por ejemplo, si el experimento consiste en lanzar dos monedas, el espacio de muestreo es el conjunto {(cara, cara), (cara, escudo), (escudo, cara) y (escudo, escudo)}. 
+      </H2>
+
+    <H2>ESPACIO MUESTRAL DISCRETO: Espacio Muestral Discreto: Son aquellos espacios donde el número de sucesos elementales es finito o infinito numerable.
+    </H2>
+<h2>Ejemplo: </h2>
+<img src="../3ra. unidad/46.png" width="400px" alt="">
+
+<h2>Espacio Muestral: A = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+</h2>
+<h2>Evento: “obtener un numero primo”
+</h2>
+<h2>Casos favorables = 4   (11, 13, 17, 19)
+</h2>
+<h2>Probabilidad=4/10 = 2/5 = 0.4 = 40%
+</h2>
+
+    </div>
+
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>Si se lanzan 3 monedas al aire, describir el espacio muestral y la probabilidad de que exista el evento:
+      </h2>
+      <h2>Obtener al menos una cara
+      </h2>
+      <h2>Obtener al menos un escudo
+      </h2>
+     
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      
+      <button id="boton" onclick="ver13();">Ver Resultado</button>
+      <div id="respuesta13">
+        <button id="boton" onclick="ocultar13();">Ocultar</button>
+        <img src="../3ra. unidad/47.png" width="300px" alt="">
+      </div>
+    </div>
+
+    <div class="middledata">
+<h2>PROBABILIDAD CONDICIONAL: Si tenemos dos eventos, A y B, la probabilidad condicional de que ocurra el evento A, dado que ha ocurrido el evento B, se representa como P(A|B), y se calcula de la siguiente manera:
+</h2>
+<img src="../3ra. unidad/48.jpg" width="200px" alt="">
+
+<h2>Ejemplo:</h2>
+
+<h2>Si P(A) = 0,6 ; P(B) = 0,4 y P(A∩B)=0,18. Calcular:</h2>
+
+  <h2> P(A|B)</h2>
+
+  <img src="../3ra. unidad/49.jpg" width="300px" alt="">
+
+    </div>
+
+    <div class="middlesubdata">
+      <h1> Ejercicio:</h1>
+      <h2>Supongamos que tenemos un aula con 30 alumnos, siendo el 50 % de 14 años y el otro 50% de 15 años. Además, sabemos que 12 integrantes del salón tienen 14 años y usan resaltador en sus libros ¿Cuál es la probabilidad de que un estudiante del salón use resaltador si tiene 14 años?
+      </h2>
+     
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      
+      <button id="boton" onclick="ver14();">Ver Resultado</button>
+      <div id="respuesta14">
+        <button id="boton" onclick="ocultar14();">Ocultar</button>
+
+        <h2>P(A|B)=P(A ∩ B)/P(B)=0,4/0,5=0,8=80%</h2>
+
+          <h2>decir, existe un 80% de probabilidad de que un estudiante use resaltador si tiene 14 años.</h2>
+
+      </div>
+    </div>
+
+
+
+
+    <div id="footer">
+      <p> <a href="#">Inicio</a> &middot;
+      </p>
+    </div>
+  </div>
+
+<script>
+  function ver(){
+    document.getElementById('respuesta').style.display = 'block';
+  }
+
+  function ocultar(){
+    document.getElementById('respuesta').style.display = 'none';
+  }
+
+  function ver2(){
+    document.getElementById('respuesta2').style.display = 'block';
+  }
+
+  function ocultar2(){
+    document.getElementById('respuesta2').style.display = 'none';
+  }
+
+  function ver3(){
+    document.getElementById('respuesta3').style.display = 'block';
+  }
+
+  function ocultar3(){
+    document.getElementById('respuesta3').style.display = 'none';
+  }
+
+
+  function ver5(){
+    document.getElementById('respuesta5').style.display = 'block';
+  }
+
+
+  function ocultar5(){
+    document.getElementById('respuesta5').style.display = 'none';
+  }
+
+
+  function ver6(){
+    document.getElementById('respuesta6').style.display = 'block';
+  }
+
+
+  function ocultar6(){
+    document.getElementById('respuesta6').style.display = 'none';
+  }
+
+  function ver7(){
+    document.getElementById('respuesta7').style.display = 'block';
+  }
+
+
+  function ocultar7(){
+    document.getElementById('respuesta7').style.display = 'none';
+  }
+
+  function ver8(){
+    document.getElementById('respuesta8').style.display = 'block';
+  }
+
+
+  function ocultar8(){
+    document.getElementById('respuesta8').style.display = 'none';
+  }
+
+  function ver9(){
+    document.getElementById('respuesta9').style.display = 'block';
+  }
+
+
+  function ocultar9(){
+    document.getElementById('respuesta9').style.display = 'none';
+  }
+
+  function ver10(){
+    document.getElementById('respuesta10').style.display = 'block';
+  }
+
+
+  function ocultar10(){
+    document.getElementById('respuesta10').style.display = 'none';
+
+  
+  }
+  
+  function ver11(){
+    document.getElementById('respuesta11').style.display = 'block';
+  }
+
+
+  function ocultar11(){
+    document.getElementById('respuesta11').style.display = 'none';
+  }
+
+  function ver12(){
+    document.getElementById('respuesta12').style.display = 'block';
+  }
+
+
+  function ocultar12(){
+    document.getElementById('respuesta12').style.display = 'none';
+  }
+
+  function ver13(){
+    document.getElementById('respuesta13').style.display = 'block';
+  }
+
+
+  function ocultar13(){
+    document.getElementById('respuesta13').style.display = 'none';
+  }
+
+  function ver14(){
+    document.getElementById('respuesta14').style.display = 'block';
+  }
+
+
+  function ocultar14(){
+    document.getElementById('respuesta14').style.display = 'none';
+  }
+
+</script>
+</body>
+</html>

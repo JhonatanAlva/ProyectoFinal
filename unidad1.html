@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Unidad 1</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../1ra. unidad/style.css" media="screen" />
+</head>
+<body>
+<div id="content">
+  <div id="header">
+    <div class="headermenu">
+      <ul>
+        <li><a href="../Pagina de inicio/index1.html">Pagina de inicio</a></li>
+        <li><a href="https://www.umg.edu.gt/">"UMG"</a></li>
+      </ul>
+    </div>
+    <h1>Unidad 1</h1>
+  </div>
+  <div id="pic"></div>
+  <div id="middle">
+    <div class="middledata">
+      <h1>La matemática discreta estudia las estructuras cuyos elementos pueden contarse uno por uno separadamente, como los números enteros, grafos y sentencias lógicas, que son aplicados en diferentes campos de la ciencia, principalmente en las ciencias de la computación.
+      </h1>
+      <h1>Principios Fundamentales del Conteo</h1>
+      <h2>El principio fundamental de conteo establece que el número de posibilidades en que múltiples eventos pueden ocurrir se pueden determinar al multiplicar el número de resultados posibles por cada evento.
+      </h2>
+    </div>
+    <div class="middledata">
+      <h1>Regla de la Suma</h1>
+      <h2>Supongamos que in evento E puede ocurrir en m formas y un segundo evento F puede ocurrir en n formas, y supongamos que ambos
+        eventos no pueden ocurrir en forma simultánea (disjuntos o mutuamente excluyentes).
+        Entonces E o F pueden ocurrir de m + n formas.
+      </h2>
+      <h1>Regla generalizada de la suma</h1>
+      <h2>Si una tarea puede realizarse de n1 maneras distintas, otra de n2 maneras distintas, y así sucisivamente hasta llegar a una k-ésima tarea que puede ser realizada de nk maneras distintas, entonces la cantidad de maneras de llevar a cabo exactamente una de ellas es:
+        n1  + n2 + … + nk. 
+        Ejemplo: EN la biblioteca de la UMG, tienen 25 libros de matemática discrtea, 15 de algortimos y 5 de Contabilidad II. Si un alumno solo puede pedir prestado un libro a la vez ¿Con cuantas opciones cuenta?
+      </h2>
+      <h3>R// 25 + 15 + 5 = 45</h3>
+    </div>
+    <div class="middlesubdata">
+      <h1> Ejercicio.</h1>
+      <h2>¿Cuántos números de 3 cifras empiezan con 5 u 8?</h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver();">Ver Resultado</button>
+      <div id="respuesta">
+        <button id="boton" onclick="ocultar();" >Ocultar</button>
+        <img src="../1ra. unidad/ejercio1.jpg" width="300px" alt="">
+      </div>
+    </div>
+    <div class="middledata">
+      <h1>Regla de la Multiplicación </h1>
+      <h2>Supongamos que un evento E puede ocurrir en m formas e independientemente de este evento, un evento F puede ocurrir en n formas.
+        Entonces las combinaciones de los eventos e Y F pueden ocurrir en mn formas.</h2>
+      <h2>Si una tarea puede realizarse de m maneras distintas y otra puede realizarse de n maneras distintas, entonces la cantidad de maneras de llevar a cabo
+        la primera tarea seguida de la segunda es m * n. Ejemplo: ¿Cuántos resultados distintos se pueden obtener si se lanza un dado dos veces?</h2>
+      <h3>R// Caras del dado: 6   Cantidad de lanzamientos: 6</h3>
+      <h3>6 * 6 = 36</h3>
+    </div>
+    <div class="middlesubdata">
+      <h1> Ejercicio.</h1>
+      <h2>Los números telefónicos de Guatemala son de ocho dígitos, de los cuales el primero tiene que ser 4 y el segundo no puede ser 0, 1 ni 7. ¿Cuántos números telefónicos diferentes se pueden formar?
+      </h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50" ></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver2();">Ver Resultado</button>
+      <div id="respuesta2">
+        <button id="boton" onclick="ocultar2();">Ocultar</button>
+        <img src="../1ra. unidad/ejercicio2.jpg" width="400px" alt="">
+      </div>
+    </div>
+    <div class="middledata">
+      <h1>Permutaciones</h1>
+      <h2>Permutaciones: Hay dos tipos de permutaciones: *Se permite repetir: por ejemplo para abri una cerradura puedes utilizar "333". *Sin repeticion: 
+        por ejemplo los tres primeros en una carrera. No puedes quedar primero y segundo a la vez.
+      </h2>
+      <h2>Permutaciones con Repeticion: son las mas faciles de calcular. Si tienes n cosas para elegir y eliges r de ellas, las permutaciones posibles son: 
+        n x n x ...(r veces) = n˄r. Porque hay n posibilidades para la primera eleccion, despues hay n posibilidades para la segunda eleccion, y asi hasta llegar 
+        a la ultima posicion. EJEMPLO: En la cerradura de arriba, hay 10 numeros para elegir (0,1,...,9) y eliges 3 de ellos. 
+        R// 10 x 10 x...(3 veces) = 10˄3 = 1,000 permutaciones
+        <img src="../1ra. unidad/permutaciones1.jpg" width="400px" alt="">
+      </h2>
+      <h2>Permutaciones sin Repeticion: En esta caso, se reduce el numero de opciones en cada paso. Ejemplo: ¿cómo podrías ordenar 16 bolas de billar?
+
+        Después de elegir por ejemplo la "14" no puedes elegirla otra vez.
+        
+        Así que tu primera elección tiene 16 posibilidades, y tu siguiente elección tiene 15 posibilidades, después 14, 13, etc. Y el total de permutaciones sería:
+        <h2>R// 16 × 15 × 14 × 13 ... = 20.922.789.888.000</h2>
+        <img src="../1ra. unidad/permutaciones3.jpg" width="400px" alt="">
+        <h2>¿Y si no se eligen todos los elemntos?</h2>
+        <img src="../1ra. unidad/permutaciones2.jpg" width="400px" alt="">
+        <h2>Ejemplo:</h2>
+        <img src="../1ra. unidad/permutaciones4.jpg" width="400px" alt="">
+      </h2>
+    </div>
+    <div class="middlesubdata">
+      <h1> Ejercicio: ¿Cuantos numeros de 4 cifras se pueden formar con los digitos 2, 4, 6, 8 si: 
+        -Las cifras se pueden repetir. -Las cifras no se pueden repetir.
+      </h1>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver3();">Ver Resultado</button>
+      <div id="respuesta3">
+        <button id="boton" onclick="ocultar3();">Ocultar</button>
+        <img src="../1ra. unidad/permutacionesejercicio1.jpg" width="350px" alt="">
+      </div>
+    </div>
+    <div class="middledata">
+      <h1>Combinaciones: Una combinacion es un arreglo de elementos en donde el orden no importa.
+        *Sin repeticion: Si cada elemento puede aparecer como mucho una vez. *Con repeticion: En cambio si no hay esta restriccion
+      </h1>
+      <h2>Combinaciones sin Repeticion: </h2>
+      <img src="../1ra. unidad/combinaciones1.jpg" width="400px" alt="">
+      <h2>Y se le llama "coeficiente binominal</h2>
+      <h2>Ejemplo: De un grupo de 12 alumnos van a sacar su credencial en grupos de 3 en 3. 
+        ¿Cuantas combinaciones se pueden se pueden realizar.
+        R// n = 12(cantidad de alumnos totales)
+        r = 3(variables) 
+      </h2>
+      <img src="../1ra. unidad/combinaciones2.jpg" width="400px" alt="">
+      <h2>Combinaciones con Repeticion: </h2>
+      <img src="../1ra. unidad/combinaciones3.jpg" width="400px" alt="">
+      <img src="../1ra. unidad/combinaciones4.jpg" width="300px" alt="">
+      <h2>Respuesta:</h2>
+      <img src="../1ra. unidad/combinaciones5.jpg" width="400px" alt="">
+    </div>
+    <div class="middlesubdata">
+      <h2> Ejercicio 1: Un restaurante ofrece ofertas de ensaladas con tomate, zanahoria, papa y brocoli.
+        ¿De cuantas formas se puede preparar la ensalada usando solo 2 ingredientes?
+        R//
+      </h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver4();">Ver Resultado</button>
+      <div id="respuesta4">
+        <button id="boton" onclick="ocultar4();">Ocultar</button>
+        <img src="../1ra. unidad/combinacion6.jpg" width="500px" alt="">
+      </div>
+      <h2> Ejercicio 2: Si se esta organizando un torneo de ajedrez en donde se inscribieron para participar 10 personas. Teniendo en cuentra que el orden
+        en que se jugaran los partidos no importa. ¿Cuantos partidos se deben programar si cada integrante jugara con cada uno de los demas sin partidos de revancha?
+        R//
+      </h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver5();">Ver Resultado</button>
+      <div id="respuesta5">
+        <button id="boton" onclick="ocultar5();">Ocultar</button>
+        <img src="../1ra. unidad/combinacion7.jpg" width="550px" alt="">
+      </div>
+    </div>
+    <div class="middledata">
+      <h1>Teoria de Conjuntos: Un conjunto es una coleccion o clase de objetos bien definidos. Estos objetos se llaman
+        elementos o miembros del conjunto.
+      </h1>
+      <h2>Ejemplos: *Los colores de la bandera de Mexico. *La agrupacion de numeros naturales menores que 10</h2>
+      <h2>Notacion de Conjuntos: Los conjuntos se denotan con las letras mayusculas de nuestro alfabeto (A, B, C, D, E,
+        F, ..., X, Y, Z) o algunas veces con letras del alfabeto griego, como en geometria. Los elementos simplemente se escriben 
+        dentro de llaves, separadas por comas.
+      </h2>
+      <h3>Ejemplos:</h3>
+      <img src="../1ra. unidad/conjuntos1.jpg" width="300px" alt="">
+      <h2>Determinacion de Conjuntos: La determinacion de un conjunto corresponde a la manera como este puede expresarse.</h2>
+      <h2>Para determinar un conjunto se utilizan dos formas:</h2>
+      <h2>*Determinacion por extension.</h2>
+      <h2>*Determinacion por comprension.</h2>
+      <h1>Determinacion por Extension: un conjunto se determina por extension cuando se enumeran o se nombran los elementos del conjunto.
+        Cuando el conjunto es finito se escriben entre llaves, separados por comas. Cuando el conjunto es infinito se escriben entre llaves algunos elementos 
+        y se ponen puntos suspensivos.
+      </h1>
+      <h2>D = {1,2,3,4,5,6,7,8...}</h2>
+      <h2>E = {1,2,3,4,5,11,13,17,19}</h2>
+      <h1>Determinacion de conjuntos pior Comprension: un conjunto se determina por comprension enunciando la propiedad o cualidad que distingue a los elementos.</h1>
+      <h1>Para tal finm se utiliza lo siguiente:</h1>
+      <h2>*{x/x cumple la propiedad}</h2>
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/conjuntos2.jpg" width="320px" alt="">
+      <h1>Relacion de Conjuntos.</h1>
+      <h2>Pertenencia:</h2>
+      <img src="../1ra. unidad/conjuntos3.jpg" width="400px" alt="">
+      <h2>Inclusion:</h2>
+      <img src="../1ra. unidad/conjuntos4.jpg" width="400px" alt="">
+      <h2>Igualdad:</h2>
+      <img src="../1ra. unidad/conjuntos5.jpg" width="400px" alt="">
+    </div>
+    <div class="middlesubdata">
+      <h1>Operaciones de Conjuntos:</h1>
+      <h2>Interseccion de Conjuntos: LA interseccion de dos conjuntos A y B es el conjunto formado por todos los elementos comunes de ambos conjuntos
+        (si repetir elementos), es decir, es el conjunto formado por todos los elementos repetidos.
+      </h2>
+      <h2>Notacion:</h2>
+      <img src="../1ra. unidad/conjuntos6.jpg" width="200px" alt="">
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/conjuntos7.jpg" width="200px" alt="">
+      <h2>Difercia de Conjuntos: La diferencia de dos Conjuntos A y B es el conjunto formado por todos los elementos no comunes
+        del conjunto B respecto al conjunto A; es decir, los elementos que estan en A, pero no estan en B.
+      </h2>
+      <h2>Notacion:</h2>
+      <h1>A - B</h1>
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/conjuntos8.jpg" width="200px" alt="">
+      <h2>Difercia Simetrica: La diferencia simetrica entrre dos conjuntos A y B es el conjunto formado por todos los elementos no comunes de ambos conjuntos;
+        es decir, los elementos que no estan repetidos entre los conjuntos.
+      </h2>
+      <h2>Notacion:</h2>
+      <h1>A + B</h1>
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/conjuntos9.jpg" width="200px" alt="">
+      <p></p>
+      <h2>Ejercicios:</h2>
+      <img src="../1ra. unidad/conjuntos10.jpg" width="400px" alt="">
+      <h1>1.</h1>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver6();">Ver Resultado</button>
+      <div id="respuesta6">
+        <button id="boton" onclick="ocultar6();">Ocultar</button>
+        <img src="../1ra. unidad/conjuntos11.jpg" width="500px" alt="">
+      </div>
+      <h1>2.</h1>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <p></p>
+      <button id="boton" onclick="ver7();">Ver Resultado</button>
+      <div id="respuesta7">
+        <button id="boton" onclick="ocultar7();">Ocultar</button>
+        <img src="../1ra. unidad/conjuntos12.jpg" width="500px" alt="">
+      </div>
+    </div>
+    <div class="middledata">
+      <h1>Diagramas de Venn: Se pueden definir como circulos que se superponen u otras figuras para ilustrar las relaciones 
+        logicas entre dos o mas conjuntos de elementos. A menudo, se utilizan para organizar cosas de forma grafica, destacando en que se 
+        parecen y fifieren los elementos. 
+      </h1>
+      <h1>Los diagramas de Venn, tambien denominados "diagramas de conjuntos" o "diagramas logicos", se usan ampliamente en las areas de matematica,
+        estadistica, logica, enseñanza, linguistica, informatica y negocios.
+      </h1>
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/diagramas1.jpg" width="300px" alt="">
+      <h2>Operaciones con Conjuntos:</h2>
+      <img src="../1ra. unidad/diagramas2.jpg" width="300px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/diagramas3.jpg" width="300px" alt="">
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/diagramas4.jpg" width="300px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/diagramas5.jpg" width="300px" alt="">
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/diagramas7.jpg" width="280px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/diagramas8.jpg" width="300px" alt="">
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/diagramas9.jpg" width="280px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/diagramas10.jpg" width="300px" alt="">
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/diagramas11.jpg" width="280px" alt="">
+      <h1>Ejercicios:</h1>
+      <p></p>
+      <h1>Teniendo:</h1>
+      <h1>-A ={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}</h1>
+      <h1>-B ={a,b,c,d,e,f,g,h,i,j}</h1>
+      <h1>-c ={2,3,6,8,10,12,14,16}</h1>
+      <h1>-D ={M,U,R,C,I,E,L,A,G,O}</h1>
+      <h1>-E ={0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f}</h1>
+      <h2>1.</h2>
+      <h2>Calcular: -(A + C) U (B - D)</h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <button id="boton" onclick="ver8();">Ver Resultado</button>
+      <div id="respuesta8">
+        <button id="boton" onclick="ocultar8();">Ocultar</button>
+        <img src="../1ra. unidad/conjuntos11.jpg" width="500px" alt="">
+      </div>
+      <h2>2.</h2>
+      <h2>Calcular: -(A ∩ C ∩ E) + (B U D)</h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <button id="boton" onclick="ver9();">Ver Resultado</button>
+      <div id="respuesta9">
+        <button id="boton" onclick="ocultar9();">Ocultar</button>
+        <img src="../1ra. unidad/conjuntos13.jpg" width="500px" alt="">
+      </div>
+      <h2>3.</h2>
+      <h2>Calcular: -(E - A) ∩ (A U B U C)</h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <button id="boton" onclick="ver10();">Ver Resultado</button>
+      <div id="respuesta10">
+        <button id="boton" onclick="ocultar10();">Ocultar</button>
+        <img src="../1ra. unidad/conjuntos14.jpg" width="500px" alt="">
+      </div>
+    </div>
+    <div class="middledata">
+      <h1>Producto Cartesiano</h1>
+      <h1>El producto cartesiano de un conjunto A y de un conjunto B es el conjunto constituido por la totalidad de los pares
+        ordenados que tienen un primer componente en A y un segundo componente en B.
+      </h1>
+      <h3>Ejemplo:</h3>
+      <img src="../1ra. unidad/planoC1.jpg" width="450px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/planoC2.jpg" width="450px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/planoC3.jpg" width="450px" alt="">
+      <p></p>
+      <img src="../1ra. unidad/planoC4.jpg" width="450px" alt="">
+      <h1>Ejercicios:</h1>
+      <p></p>
+      <h1>Teniendo:</h1>
+      <h1>-A ={1,2,3}</h1>
+      <h1>-B ={w,x,y,z}</h1>
+      <h2>Calcular plano cartesiano: A * B</h2>
+      <form class="" action="resultado.html" method="post">
+        <textarea name="comentario" rows="10" cols="50"></textarea>
+      </form>
+      <button id="boton" onclick="ver11();">Ver Resultado</button>
+      <div id="respuesta11">
+        <button id="boton" onclick="ocultar11();">Ocultar</button>
+        <img src="../1ra. unidad/planoC5.jpg" width="500px" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p> <a href="#">Inicio</a> &middot;
+    </p>
+  </div>
+</div>
+<script>
+  function ver(){
+    document.getElementById('respuesta').style.display = 'block';
+  }
+
+  function ocultar(){
+    document.getElementById('respuesta').style.display = 'none';
+  }
+
+  function ver2(){
+    document.getElementById('respuesta2').style.display = 'block';
+  }
+
+  function ocultar2(){
+    document.getElementById('respuesta2').style.display = 'none';
+  }
+
+  function ver3(){
+    document.getElementById('respuesta3').style.display = 'block';
+  }
+
+  function ocultar3(){
+    document.getElementById('respuesta3').style.display = 'none';
+  }
+
+  function ver4(){
+    document.getElementById('respuesta4').style.display = 'block';
+  }
+
+  function ocultar4(){
+    document.getElementById('respuesta4').style.display = 'none';
+  }
+  function ver5(){
+    document.getElementById('respuesta5').style.display = 'block';
+  }
+
+  function ocultar5(){
+    document.getElementById('respuesta5').style.display = 'none';
+  }
+  function ver6(){
+    document.getElementById('respuesta6').style.display = 'block';
+  }
+
+  function ocultar6(){
+    document.getElementById('respuesta6').style.display = 'none';
+  }
+  function ver7(){
+    document.getElementById('respuesta7').style.display = 'block';
+  }
+
+  function ocultar7(){
+    document.getElementById('respuesta7').style.display = 'none';
+  }
+  function ver8(){
+    document.getElementById('respuesta8').style.display = 'block';
+  }
+
+  function ocultar8(){
+    document.getElementById('respuesta8').style.display = 'none';
+  }
+  function ver9(){
+    document.getElementById('respuesta9').style.display = 'block';
+  }
+
+  function ocultar9(){
+    document.getElementById('respuesta9').style.display = 'none';
+  }
+  function ver10(){
+    document.getElementById('respuesta10').style.display = 'block';
+  }
+
+  function ocultar10(){
+    document.getElementById('respuesta10').style.display = 'none';
+  }
+  function ver11(){
+    document.getElementById('respuesta11').style.display = 'block';
+  }
+
+  function ocultar11(){
+    document.getElementById('respuesta11').style.display = 'none';
+  }
+</script>
+</body>
+</html>
